@@ -8,16 +8,31 @@
     padding: 0px;
     box-sizing:border-box;
 }
-h4{
-    
-    color: var(--color);
-    letter-spacing: 1px;
-}
+
 @font-face{
     font-family: myfont;
     src:url(../font/Helvetica.ttf) ;
     src: url(../font/Arial.ttf);
     font-family: sans-serif;
+}
+
+h4{
+    
+    color: var(--color);
+    letter-spacing: 1px;
+}
+h5{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1px;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #4496fa;
 }
 .grey-color{
     color: var(--color);
@@ -40,7 +55,6 @@ body{
 .heading{
    
     display: flex;
-    font-size: 7px;
     letter-spacing: 1px;
     padding: 10px;
     justify-content: space-between; 
@@ -65,41 +79,93 @@ body{
     display: none;
     font-size: 16px;
     color: var(--color);
-    margin: 13px 5px;
+    width: 50px;
+    padding: 13px 17px;
 }
 #arrow-logo:hover{
     background-color: var(--primary);
     border-radius: 50%;
     cursor: pointer;
-    padding: 10px;
+    /* padding: 2px 3px; */
+    /* margin-top: 10px; */
     
 }
 
-.middle-article{
-    z-index: 0;
-}
-
-.search-logo i{
-    position: absolute;
-    margin: -1.7rem 1rem;
-    font-size: 16px;
-    color: var(--color); 
-}
 .search-btn{
     position: relative;
-    width: 120%;
+    width: 105%;
     padding-left: 3rem;
 }
+.search-logo i{
+    font-size: 16px;  
+    color: var(--color);   
+}
 
-.drop-downlist{  
+#search-icon{
+    position: absolute;
+    margin: -1.7rem 1rem;  
+ 
+}
+
+#mydropDown{  
+
     display: none;
     position: absolute;
-    text-align: center;
-    width:27%;  
+    padding: 5px;
+    width:24%;  
     left: 0;
     border-radius: 8px;
     background-color: white;
+    
 }
+
+
+.dropdown-list,.dropdownlist-img,.dropdown-heading {
+    display: flex;
+    gap: 10px;
+    margin: 7px;
+    align-items: center;
+    
+}
+.dropdown-heading{
+    justify-content: space-between;
+    padding: 10px;   
+}
+
+.dropdown-list{
+    justify-content: space-between;
+    padding: 0 5px;
+    
+}
+
+.dropdown-list:hover{
+    background-color: #e9ebed;
+    border-radius: 8px;
+}
+.cross-logo{
+    width: 21px;
+    padding: 1px 5px;
+}
+.cross-logo:hover{
+    background-color:#e1e2e4 ;
+    border-radius: 50%;
+    
+}
+.dropdownlist-img img{
+    width:40px ;
+    border-radius: 50%;
+   
+}
+
+.clock-logo>i{
+    background-color: var(--primary);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    
+}
+
+
 
 .right-logo{
     padding:13px 15px;
@@ -402,7 +468,22 @@ small{
     background-color: #e4e6eb;
 }
   
+@media screen and (max-width: 1258px)  {
+        .search-btn{
+            display: none;
+        }
+        .search-logo{
+            padding:13px 24px;
+            background-color: var(--primary); 
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .search-logo i{
+            margin: 5px -8px;
+        }
 
+    
+}
 
 @media screen and (max-width: 1120px){
     .grid-icon{

@@ -18,5 +18,15 @@ arrow.addEventListener("click", function(){
     fbLogo.style.display="block"
 })
 
+const crossLogo= document.querySelectorAll(".cross-logo")
+const dropDownList= document.querySelectorAll(".dropdown-list")
+for(i=0; i<dropDown.length;i++){
+    crossLogo[i].addEventListener("click",function(){
+        dropDownList[i].style.display= "none";
+    })
+}
+
+
+
 
 
