@@ -9,6 +9,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
@@ -18,18 +19,52 @@
           <div class="heading">
           <!-- left-side heading -->
           <div class="heading-flex left-heading">      
-              <div class="fb-logo">
+              <div id="fb-logo">
                 <img
                   src="./fb-image/facebook-logo.svg"
                   width="45px"
                   alt="facebook   logo"
                 />
               </div>
-              <div class="search-logo">
-                <button class="search-btn" type="submit">
-                  <i class="fa fa-search"></i>
-                </button>
+              <div id="arrow-logo">
+                <i class="fa-solid fa-arrow-left"></i>
               </div>
+              <div class="search-logo">
+                <input class="search-btn"  id="search"  placeholder="Search Facebook">
+                  <i class="fa fa-search"></i>   
+                  
+                  <div id="mydropDown" class="drop-downlist">
+                    <div class="dropdown-list">
+                      <div class="dropdownlist-img">
+                      <img src="./fb-image/" alt="">
+                    </div>
+                      <span>Amisha Rijal</span>
+                    </div>
+                    <div class="dropdown-list">
+                      <div class="dropdownlist-img">
+                        <img src="./fb-image/" alt="">
+                      </div>
+                        <span>Amisha Rijal</span>
+                      </div>
+                    
+                    <div class="dropdown-list">
+                      <div class="dropdownlist-img">
+                        <img src="./fb-image/" alt="">
+                      </div>
+                        <span>Amisha Rijal</span>
+                    </div>                     
+                    
+                    <div class="dropdown-list">
+                      <div class="dropdownlist-img">
+                        <img src="./fb-image/" alt="">
+                      </div>
+                        <span>Amisha Rijal</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+              
+              
               <div class="menu-bar" style="margin-top: 10px">
                 <div></div>
                 <div></div>
@@ -231,25 +266,25 @@
            <div class="middle-article">
 
            <div class="profile-row row">
-           <div class="img-logo img-profile-logo">
+           <div class="img-logo img-profile-logo img1-profile">
             <img src="./fb-image/group-pic.png" alt="">
             <p class="profileName">Amisha Rijal</p>
            </div>
-           <div class="img-logo img-profile-logo ">
+           <div class="img-logo img-profile-logo  img2-profile">
             <img src="./fb-image/group-pic.png" alt="">
-            <p class="profileName">Amisha Rijal</p>
+            <p class="profileName">Agya Agryal</p>
            </div>
-           <div class="img-logo img-profile-logo">
+           <div class="img-logo img-profile-logo img3-profile">
             <img src="./fb-image/group-pic.png" alt="">
-            <p class="profileName">Amisha Rijal</p>
+            <p class="profileName">Kripa Pokhrel</p>
            </div>
-           <div class="img-logo img-profile-logo">
+           <div class="img-logo img-profile-logo img4-profile">
             <img src="./fb-image/group-pic.png" alt="">
-            <p class="profileName">Amisha Rijal</p>
+            <p class="profileName">Aashika Pun</p>
            </div>
-           <div class="img-logo img-profile-logo">
+           <div class="img-logo img-profile-logo img5-profile">
             <img src="./fb-image/group-pic.png" alt="">
-            <p class="profileName">Amisha Rijal</p>
+            <p class="profileName">Alisha Rijal</p>
            </div>
           </div>
 
@@ -446,14 +481,16 @@
           
           <div class="friend-request">
             <h4>Friend requests</h4>
+            <div class="profile-logo-wrap">
             <div class="profile-logo">
             <img src="./fb-image/amisha-logo.png" alt="">
           </div>
             <div class="profile-name">
               <p>Aryan Arn</p>
-              <button class="confirm">Confirm</button>
-              <button class="delete">Delete</button>
+              <button class="confirm profile-btn">Confirm</button>
+              <button class="delete profile-btn">Delete</button>
             </div>
+          </div>
           </div>
           <hr class="left-horizontal-line">
 
@@ -531,5 +568,6 @@
     </div>
     
       </main>
+      <script src="./index.js"></script>
     </body>
   </html>

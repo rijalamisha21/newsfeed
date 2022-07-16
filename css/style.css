@@ -1,6 +1,7 @@
 :root{
     --primary:#f0f2f5;
     --color:rgb(96, 103, 112);
+    --blue-color:#1b74e4;
 }
 *{
     margin: 0px;
@@ -39,7 +40,7 @@ body{
 .heading{
    
     display: flex;
-    font-size: 12px;
+    font-size: 7px;
     letter-spacing: 1px;
     padding: 10px;
     justify-content: space-between; 
@@ -59,25 +60,56 @@ body{
     margin-top: 10px;
 } */
 
+
+#arrow-logo{
+    display: none;
+    font-size: 16px;
+    color: var(--color);
+    margin: 13px 5px;
+}
+#arrow-logo:hover{
+    background-color: var(--primary);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
 .middle-article{
     z-index: 0;
 }
 
+.search-logo i{
+    position: absolute;
+    margin: -1.7rem 1rem;
+    font-size: 16px;
+    color: var(--color); 
+}
+.search-btn{
+    position: relative;
+    width: 120%;
+    padding-left: 3rem;
+}
 
+.drop-downlist{  
+    display: none;
+    position: absolute;
+    text-align: center;
+    width:27%;  
+    left: 0;
+    border-radius: 8px;
+    background-color: white;
+}
 
-.search-btn,.right-logo{
+.right-logo{
     padding:13px 15px;
     background-color: var(--primary); 
     border-radius: 50%;
     cursor: pointer;
 }
-.search-btn{
-    color: var(--color);
-    font-size: 18px;
-    font-weight: 600;  
-    border: none;  
- 
-}
+/* .search-btn{
+     
+} */
 
 
 .plus-icon, .messenger-logo, .bell-icon,.grid-icon{
@@ -95,7 +127,7 @@ body{
 }
 
 .middle-heading>div{
-    margin: 4px 30px;
+    margin: 4px 36px;
     padding: 5px;
     cursor: pointer;
 }
@@ -104,6 +136,7 @@ body{
 }
 .left-margin{
     margin-left: 1rem;
+    
 }
 
 
@@ -176,6 +209,7 @@ body{
     gap: 1rem;
 }
 
+
 span, p{
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -205,11 +239,29 @@ span, p{
 .img-logo{
     width: 113px;
     height: 202px;
-    background-image: url(../fb-image/amisha-pic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius:  10px;
     
+}
+.img1-profile{
+    background-image: url(../fb-image/amisha-pic.jpg);
+}
+.img2-profile{
+    background-image: url(../fb-image/pic4.jpg);
+
+}
+.img3-profile{
+    background-image: url(../fb-image/pic5.jpg);
+
+}
+.img4-profile{
+    background-image: url(../fb-image/pic9.jpg);
+}
+
+.img5-profile{
+    background-image: url(../fb-image/pic7.jpg);
+
 }
 
 .row{
@@ -326,6 +378,28 @@ small{
     width: 98%;
     color: rgb(247, 248, 250);
     line-height: 1px;
+}
+.profile-logo-wrap{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.profile-btn{
+    padding: 10px;
+    width: 100px;
+    background-color: v;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.confirm{
+    background-color: var(--blue-color);
+    color: white;
+    margin-right: 5px;
+}
+.delete{
+    background-color: #e4e6eb;
 }
   
 
