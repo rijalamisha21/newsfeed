@@ -1,0 +1,393 @@
+:root{
+    --primary:#f0f2f5;
+    --color:rgb(96, 103, 112);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+h4{
+    
+    color: var(--color);
+    letter-spacing: 1px;
+}
+@font-face{
+    font-family: myfont;
+    src:url(../font/Helvetica.ttf) ;
+    src: url(../font/Arial.ttf);
+    font-family: sans-serif;
+}
+.grey-color{
+    color: var(--color);
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;  
+    z-index: 2;
+    background-color: white;
+   
+     
+}
+
+body{
+    font-family: myfont;
+    
+}
+
+.heading{
+   
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 10px;
+    justify-content: space-between; 
+    box-shadow: 0 1px 2px rgb(217, 219, 222);
+    
+    
+
+}
+.heading-flex{
+    display: flex;
+}
+.heading-flex>div{
+
+    margin:0px 5px;
+}
+/* .menu-bar{
+    margin-top: 10px;
+} */
+
+.middle-article{
+    z-index: 0;
+}
+
+
+
+.search-btn,.right-logo{
+    padding:13px 15px;
+    background-color: var(--primary); 
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-btn{
+    color: var(--color);
+    font-size: 18px;
+    font-weight: 600;  
+    border: none;  
+ 
+}
+
+
+.plus-icon, .messenger-logo, .bell-icon,.grid-icon{
+    width: 50px;
+    
+}
+.plus-icon>img{
+    color: var(--color);
+}
+.profile-logo>img{
+    border-radius: 50%;
+}
+.grid-icon>img{
+    width: 20px;
+}
+
+.middle-heading>div{
+    margin: 4px 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+.middle-heading div>svg{
+    color: rgb(101, 103, 107);
+}
+.left-margin{
+    margin-left: 1rem;
+}
+
+
+.tooltip{
+    position: relative;
+   
+    
+}
+.tooltiptext{
+    position: absolute;
+    visibility: hidden;
+    background-color:  rgba(0, 0, 0, 0.7);
+    top: 125%;
+    right: 10%;
+    margin-left:25px;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+   
+   
+}
+.right-logo:hover{
+    background-color: #dfe0e4;
+}
+.people>img{
+    width: 40px;
+    color: #4d7ef1;;
+}
+.left-icons svg{
+    
+    color: #4d7ef1;
+}
+
+
+.container{   
+    background-color: var(--primary);
+    padding-top: 5rem;
+}
+.wrap-container{
+    display: flex;
+    padding: 1rem;
+    
+}
+.left-sidebar{
+    position: fixed; 
+    left: 0; 
+    width: 25%;
+    overflow: scroll;
+}
+.left-sidebar > div, .right-sidebar>div{
+    margin: 1rem;
+}
+.left-logo img, .left-logo svg, .gift-logo>img{
+    width: 30px;
+    margin-top: 5px;
+
+}
+.profile-logo,.left-logo,.gift-logo, .post-center{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+.main-content{
+    gap: 1rem;
+}
+
+span, p{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    font-weight: 400;
+    
+    
+}
+
+/* .left-logo span{
+    margin: 0 10px;
+} */
+
+.left-horizontal-line {
+    margin: 10px 0;;
+    width: 80%;
+    color: rgb(247, 248, 250);
+    line-height: 1px;
+}
+
+.middle-article{
+    width: 50%;
+    margin:1rem auto;
+      
+}
+
+.img-logo{
+    width: 113px;
+    height: 202px;
+    background-image: url(../fb-image/amisha-pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:  10px;
+    
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+    margin: 0 1rem;
+}
+.img-profile-logo>img{
+    margin: 20px;
+    border-radius: 50%;
+    border: 3px solid #1876f2;
+}
+.profileName{
+    color: white;
+    margin-top: 92px;
+    margin-left: 10px;
+}
+.right-sidebar{
+    position: fixed;
+    right: 0;
+    width: 25%;
+    padding: 1rem 0;
+    margin-right: 0px;
+    overflow: scroll;
+}
+.first-profile>img
+{
+    margin: 5px;
+}
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } */
+  .middle-article-wrap{
+    width: 85%;
+    margin: auto;
+    padding: 1rem;
+    /* border: 1px solid green; */
+  }
+.post-row, .createRoom-row, .main-content{
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    
+}
+.post-row{
+    flex-direction: column;
+}
+.post-flex{
+    display: flex;
+    gap: 1rem;
+}
+ .post-icon div >img{
+    width: 30px;   
+ }
+  .post-icon{
+    gap: 2rem;
+  }
+  .post-row span{
+    color: var(--color);
+  }
+
+
+  input{
+    background-color: var(--primary);
+    color: var(--color);
+    padding: 10px;
+    border: none;
+    width: 85%;
+    border-radius: 25px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    outline: none;
+  }
+
+  .middle-horizontal{
+    width: 97%;
+    margin-top: 10px;
+    line-height: 1px;
+  }
+
+.createRoom-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.main-content{
+    margin-top: 1rem;
+  
+}
+.main-content-img img{
+    width: 100%;
+}
+.content-heading{
+    margin:5px 0;
+}
+small{
+    color: var(--color);
+}
+.react-wrap, .react{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6px;
+    
+}
+.bottom-react{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-content-horizontal{
+    width: 98%;
+    color: rgb(247, 248, 250);
+    line-height: 1px;
+}
+  
+
+
+@media screen and (max-width: 1120px){
+    .grid-icon{
+        display: none;
+    }
+    .left-sidebar{
+        display: none;
+    }
+    .middle-article{
+        width: 70%;
+    }
+    .right-sidebar{
+        width: 30%;
+    }
+    
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+@media  screen and (min-width:1120px) {
+    .plus-icon{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:900px) {
+    .right-sidebar{
+        display: none;
+    }
+    .middle-article{
+        width: 90%;
+      
+    }
+    .profile-row{
+        width: 100%
+    }
+    
+    
+}
+
+@media screen and (max-width:700px){
+    .middle-heading{
+        display: none;
+        
+    }
+    
+    .menu-bar >div{
+        width: 20px;
+        height: 3px;
+        background-color: var(--color) ;
+        margin: 4px;
+        border-radius: 25%;
+        cursor: pointer;    
+    }
+    .middle-article,.profile-row,.middle-article-wrap{
+        width: 100%;
+        
+    }
+}
+
